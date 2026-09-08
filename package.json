@@ -1,0 +1,27 @@
+{
+  "name": "ride_booking",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Shiela-P/ride_booking#readme",
+  "bugs": {
+    "url": "https://github.com/Shiela-P/ride_booking/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shiela-P/ride_booking.git"
+  },
+  "license": "ISC",
+  "author": "Shiela",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.9.4",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
