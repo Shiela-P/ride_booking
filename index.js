@@ -1,14 +1,14 @@
 const { loadEnvFile } = require('node:process');
 const express = require('express');
-// const bcrypt = require('bcrypt');
-// const User = require("./schemas/user");
 const userRoutes = require("./routes/user");
+const rideRoutes = require("./routes/ride");
 
 
 const app = express();
 
 //use userRoutes file for all "/user" requests
 app.use('/user', userRoutes);
+app.use('/ride', rideRoutes);
 
 // port as defined in .env or 3001 by default
 const port = process.env.PORT || 3001;

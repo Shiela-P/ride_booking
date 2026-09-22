@@ -10,8 +10,8 @@ router.use(express.json());
 
 //Create a new user
 router.post('/', async (req, res) => { //route
-    //create user using mongoose schema
     const encryptedPass = await bcrypt.hash(req.body.password, saltRounds=10)
+    //create user using mongoose schema
     const user = new User({
         firstName:req.body.firstName,
         lastName:req.body.lastName,
