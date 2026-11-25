@@ -3,6 +3,9 @@ const express = require('express');
 const userRoutes = require("./routes/user");
 const rideRoutes = require("./routes/ride");
 
+// port as defined in .env or 3001 by default
+const port = process.env.PORT || 3001;
+loadEnvFile();
 
 const app = express();
 
@@ -10,9 +13,7 @@ const app = express();
 app.use('/user', userRoutes);
 app.use('/ride', rideRoutes);
 
-// port as defined in .env or 3001 by default
-const port = process.env.PORT || 3001;
-loadEnvFile();
+
 
 app.use(express.json());
 
